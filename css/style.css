@@ -1,0 +1,33 @@
+body {
+	background-image: url("../img/starbackground.jpg");
+}
+
+.regular {
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	color: tomato;
+	font-size: 36px;
+	text-align: center;
+}
+
+.infobox {
+	border: 5px solid #CA0000;
+	width: 62%;
+	margin-left: 19%;
+	background-color: #930000;
+	font-family: fantasy;
+	font-size: 20px;
+	text-align: center;
+}
+
+.impostor {
+	color: red;
+	letter-spacing: 1px;
+}
+
+.crewmate {
+	color: lime;
+}
