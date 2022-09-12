@@ -7,6 +7,27 @@ body {
 	text-align: center;
 }
 
+.leftplaylist {
+	color: white;
+	text-align: left;
+	margin-right: 10%;
+	display: inline-block;
+	border: 5px solid #434848;
+	background-color: #2f3333;
+}
+
+.listtitle {
+	text-align: center;
+}
+.rightplaylist {
+	color: white;
+	text-align: left;
+	margin-left: 10%;
+	display: inline-block;
+	border: 5px solid #434848;
+	background-color: #2f3333;
+}
+
 h2 {
 	color: tomato;
 	font-size: 36px;
@@ -15,14 +36,23 @@ h2 {
 
 .infobox {
 	border: 5px solid #CA0000;
-	width: 52%;
-	margin-left: 24%;
 	background-color: #930000;
+	width: 52%;
+	margin-left: 24%;	
 	font-family: fantasy;
 	font-size: 25px;
 	text-align: center;
 }
 
+.divider {
+	color: #ff0000;
+	background-color: #930000;
+	width: 100%;
+	font-size: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
 .impostor {
 	color: red;
 	letter-spacing: 1px;
@@ -30,4 +60,35 @@ h2 {
 
 .crewmate {
 	color: lime;
+}
+
+.numbered {
+	border: 1px solid tomato;
+	display: inline-block;
+	text-align: center;
+}
+
+.numbereditem {
+	text-align: left;
+	font-size: 25px;
+}
+
+.table {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	display: inline-block;
+	background-color: #CA0000;
+}
+
+.table2 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	display: inline-block;
+	background-color: #0000ff;
+}
+
+table, th, td {
+  border: 2px solid black;
 }
