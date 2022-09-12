@@ -62,17 +62,6 @@ h2 {
 	color: lime;
 }
 
-.numbered {
-	border: 1px solid tomato;
-	display: inline-block;
-	text-align: center;
-}
-
-.numbereditem {
-	text-align: left;
-	font-size: 25px;
-}
-
 .table {
 	color: white;
 	text-align: center;
