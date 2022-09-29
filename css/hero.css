@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+}
+
+header {
+	text-align: center;
+	background-color: #ef382b;
+	padding: 35px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+header img {
+	border: 5px solid #2be2ef;
+	border-radius: 255px;
+	width: 500px;
+}
+
+header h1 {
+	font-size: 50px;
+	margin: 0;
+}
+
+header h2 {
+	font-size: 25px;
+	margin: 0;
+	opacity: 0.7;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.box {
+	max-width: 100%;
+	display: inline-block;
+}
+
+.box img{
+	max-width: 50%;
+}
+
+.box p{
+	max-width: 50%;
+	margin: 0;
+}
