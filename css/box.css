@@ -2,5 +2,6 @@ div {
 	width: 400px;
 	border: 20px solid pink;
 	padding: 30px;
-	margin: 20px;
+	margin: 20px;'
+	box-sizing: border-box;
 }
