@@ -1,7 +1,22 @@
-div {
+.box1 {
 	width: 400px;
 	border: 20px solid pink;
 	padding: 30px;
 	margin: 20px;
 	box-sizing: border-box;
+}
+
+.box2 {
+	background-color: tomato;
+	padding: 20px 75px 5px 10px;
+	margin: 40px;
+	border: 15px red dotted;
+	border-bottom: 5px red solid;
+	border-top: 10px black dashed;
+}
+
+h2 {
+	color: white;
+	background-color: blue;
+	margin: -60px 0px 0px -25px;
 }
