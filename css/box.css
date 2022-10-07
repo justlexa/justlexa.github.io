@@ -9,7 +9,7 @@
 .box2 {
 	background-color: tomato;
 	padding: 20px 75px 5px 10px;
-	margin: 40px;
+	margin: 0px auto;
 	border: 15px red dotted;
 	border-bottom: 5px red solid;
 	border-top: 10px black dashed;
