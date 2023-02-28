@@ -1,2 +1,3 @@
-# justlexa.github.io
-this is my sussy website
+# Learning Website
+Website for learning how to code with HTML and CSS.
+## this is for school
