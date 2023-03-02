@@ -1,0 +1,14 @@
+.float-left {
+  float: left;
+  margin: 5px 5px 5px 0;
+}
+
+.float-right {
+  float: right;
+  margin: 5px 0 5px 5px;
+}
+
+p {
+  text-align: center;
+  margin: 0 20em 0 20em;
+}
