@@ -35,3 +35,11 @@ div {
 .ir {
   float: right;
 }
+
+.sideboxl {
+	text-align: left;
+	background-color: #3c0015;
+	border-right: 3px solid #5c0020;
+	margin: 5px 85% 5px 5px;
+	padding: 10px 5px 10px 10px;
+}
