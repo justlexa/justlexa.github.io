@@ -1,14 +1,37 @@
-.float-left {
+body {
+  color: white;
+  background-color: #16000e;
+}
+
+.left {
+  padding: 10px 20% 10px 5%;
+  text-align: left;
   float: left;
   margin: 5px 5px 5px 0;
 }
 
-.float-right {
+.right {
+  padding: 10px 5% 10px 20%;
+  text-align: right;
   float: right;
   margin: 5px 0 5px 5px;
 }
 
-p {
-  text-align: center;
-  margin: 0 20em 0 20em;
+img {
+  display: block;
+  border: 5px solid #5c0020;
+}
+
+/* 
+div {
+  border: 3px solid red;
+}
+*/
+
+.il {
+  float: left;
+}
+
+.ir {
+  float: right;
 }
