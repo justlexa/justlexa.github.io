@@ -1,6 +1,11 @@
 body {
   color: white;
-  background-color: #16000e;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+  background: #a90329; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .left {
