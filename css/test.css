@@ -1,0 +1,15 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+
+h1 {
+    background-color: blue;
+}
+
+.boxtest {
+    margin: 0 auto 0 auto;
+    border: 3px solid red;
+    text-align: left;
+    width: calc(100% - 250px);
+}
