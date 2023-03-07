@@ -1,0 +1,23 @@
+.nav {
+    background-color: blueviolet;
+    height: 20vh;
+    min-height: 120px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0 15px 0;
+}
+
+.body {
+    background-color: greenyellow;
+    height: 30vh;
+}
+
+.content {
+    color: whitesmoke;
+    background-color: maroon;
+    height: 10vh;
+}
+
+nav span.title {
+    color: red;
+}

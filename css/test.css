@@ -5,6 +5,16 @@ body {
 
 h1 {
     background-color: blue;
+    margin: 0;
+}
+
+.banner {
+    background-color: blueviolet;
+    height: 20vh;
+    min-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    padding: 15px 0 15px 0;
 }
 
 .boxtest {
