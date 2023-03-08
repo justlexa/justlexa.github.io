@@ -1,12 +1,30 @@
-.nav {
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.banner {
     background-color: blueviolet;
+
     height: 20vh;
     min-height: 120px;
     text-align: center;
     font-size: 20px;
     padding: 15px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+nav {
+    color: white;
+    background-color: black;
+    padding: 0 15px;
+    font-size: 25px;
+}
 .body {
     background-color: greenyellow;
     height: 30vh;
@@ -15,9 +33,47 @@
 .content {
     color: whitesmoke;
     background-color: maroon;
-    height: 10vh;
+}
+
+.float-right {
+    float: right;
+}
+
+@media(max-width:640px) {
+    .float-right {
+        float: initial;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.transition{
+    font-size: 25;
+    transition: font-size 2s;
+    margin: 0 0 100px 0;
+}
+
+@media (min-width:320px) {
+    .transition {
+            font-size: 50px;
+    }
+}
+
+@media (min-width:780px) {
+    .transition {
+        font-size: 100px;
+    }
 }
 
 nav span.title {
+    font-family: cursive;
     color: red;
+}
+
+span.version {
+    font-size: 9px;
+    display: block;
+    position: relative;
+    top: -8px;
+    left: 5px;
 }
