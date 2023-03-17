@@ -5,14 +5,17 @@ let count = 0;
 const value = document.querySelector("#value");
 const btns =  document.querySelectorAll(".btn");
 
+// executes function for all buttons
 btns.forEach(function (btn) {
     btn.addEventListener("click", function(e){
+        // gets each buttons styles
         const styles = e.currentTarget.classList;
+        // uses styles to check which button it is
         if(styles.contains("decrease")){
             count--;
         } else if(styles.contains("increase")){
             count++;
-        } else{
+        } else(styles.contains("reset")){
             count = 0;
         }
         if(count > 0){
