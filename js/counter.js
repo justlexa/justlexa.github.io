@@ -18,6 +18,7 @@ btns.forEach(function (btn) {
         } else(styles.contains("reset")){
             count = 0;
         }
+        // changes the numbers color for negative, positive and 0 values
         if(count > 0){
             value.style.color = "green";
         }
