@@ -1,0 +1,3 @@
+Sidebar on all pages
+Some animation changes
+Making content get "pushed" by the sidebar
