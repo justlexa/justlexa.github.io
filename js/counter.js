@@ -15,7 +15,7 @@ btns.forEach(function (btn) {
             count--;
         } else if(styles.contains("increase")){
             count++;
-        } else(styles.contains("reset")){
+        } else if(styles.contains("reset")){
             count = 0;
         }
         // changes the numbers color for negative, positive and 0 values
