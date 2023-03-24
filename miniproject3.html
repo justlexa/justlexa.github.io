@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 3</title>
+</head>
+<body>
+    
+    <h1 id="text">not changed text</h1>
+
+    <script>
+
+        var text = document.getElementById("text");
+        var age = prompt("Give a number!");
+        var number = 0
+
+        age = Number(age)
+
+        if(typeof(age) === typeof(number)) {
+            if(age >= 18) {
+            text.innerHTML = "changed text";
+            }
+        }
+        
+    </script>
+</body>
+</html>
