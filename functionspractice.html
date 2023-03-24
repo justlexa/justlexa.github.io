@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function practice</title>
+</head>
+<body>
+    
+    <hi id="title"></hi>
+
+    <script>
+
+        // function doMath(num) {
+        //     num = Number(num)
+        //     if(num) {
+        //         // Is a real number
+        //         var newNumber = (num + 100) / 4;
+        //         return newNumber;
+        //     } else {
+        //         // Isn't a real number
+        //         return false;
+        //     }
+        // }
+
+        // var customNum = doMath("Kalob");
+        // console.log(customNum)
+
+
+        // Function to get elements by id with less code
+        function $(id) {
+            console.log("Id is:", id);
+            return document.getElementById(id);
+        }
+
+        // Using $ to find an element and change its text
+        var title = $("title");
+        title.innerText = "Custom Inner Text"
+
+
+
+
+        // Celsius to Fahrenheit converter function.
+        function cToF(cnum) {
+            var Fahrenheit = (cnum * 1.8) + 32
+            return Fahrenheit
+        }
+
+        var zero = cToF(0); console.log(zero);
+        var twenty = cToF(20); console.log(twenty);
+        var boiling = cToF(100); console.log(boiling);
+        var freezing = cToF(-40); console.log(freezing);
+
+    </script>
+</body>
+</html>

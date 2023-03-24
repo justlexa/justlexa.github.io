@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Tip calculator
+        function tip(price=50, tip=15) {
+            if(tip > 0) { // Check to make sure you dont have negative tip
+                return (price + ((price / 100) * tip));
+            } else { // Returns just the price if tip is 0 or less.
+                return (price);
+            }
+        }
+
+        // Variable that calls the tip function and stores the total.
+        var total = tip()
+        console.log(total)
+
+
+    </script>
+</body>
+</html>
