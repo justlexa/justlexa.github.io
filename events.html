@@ -11,7 +11,32 @@
     <h1>Events</h1>
 
 
-    <input type="number" class="form-control" style="padding:30px; font-size. 30px; color: blue; border: solid 1px blue;"
+    <input type="number" class="form-control" style="padding:30px; font-size. 30px; color: blue; border: solid 1px blue;">
+    <br />
+    <button class="btn btn-primary" style="backgroudn-color: blue; color: #ffff; font-size: 20px;" onClick="calculate()">
+        Add 100
+    </button>
+
+    <h1>The total is: <span>N/A</span></h1>
+
+
+    <script>
+        var num = 100;
+
+        function calculate() {
+            var input = document.querySelector(".form-control")
+            var value = Number(input.value)
+            var totalValue = value + num
+
+            var h1 = document.querySelectorAll("h1")[1]
+            var span = h1.querySelector("span")
+
+            span.innerText = totalValue
+        }
+
+    </script>
+
+
 
 
     <!-- Button that says how many times you clicked it
