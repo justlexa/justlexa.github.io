@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>
+        This text will be changed in 3 ways
+    </h1>
+
+    <script>
+        var textNode = document.querySelector("h1")
+        var text = textNode.innerText
+        text = "Changed text"
+        console.log(text)
+        // Make text italic
+        text = "<i>" + text + "</i>"
+        console.log(text)
+        // Make text uppercase
+        var upperText = text.toUpperCase()
+        text = upperText
+        console.log(text)
+        // Make the changes appear on the website
+        textNode.innerHTML = text
+    </script>
+
+</body>
+</html>
