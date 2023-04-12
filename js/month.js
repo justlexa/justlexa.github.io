@@ -4,7 +4,7 @@ var quadrantNode = document.querySelector("#quadrantNode")
 var textNode = document.querySelector("#textNode")
 
 // Prompts user to input a month
-var userMonth = prompt("What month were you born?")
+var userMonth = prompt("What month were you born? (ex. January, February etc.")
 // Error message for if the month wasnt inputted
 if (userMonth == null) {
     textNode.innerHTML = "<h1>Please input a month.</h1>"
