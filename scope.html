@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    
+    <script>
+    // This is a global variable
+    // Global variables are accessible anywhere.
+    var course = "Javascript for beginners";
+
+    // This is a global function
+    // Similar to global variables, it is accessible anywhere.
+    function doAthing() {
+        // This is a local variable
+        // Local variables are only accessible in the local code it belongs in.
+        var teacher = "Kalob Taulien"
+        // Two console logs
+        console.log("!!!", teacher)
+        console.log("!!!", course)
+    };
+    // Execute the variable
+    doAthing(course)
+    // Console log
+    console.log("OUT OF SCOPE:", teacher)
+
+
+
+    </script>
+
+</body>
+</html>
