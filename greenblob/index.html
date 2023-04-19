@@ -8,7 +8,7 @@
     <style>
         #gameArea {
             border: 10px solid greenyellow;
-            border-radius: 25px;
+            border-radius: 5px;
         }
 
         body{
@@ -27,16 +27,23 @@
         h1 {
             font-family: Comic Sans MS;
         }
+
+        h3 {
+            font-family: Comic Sans MS;
+        }
     </style>
 </head>
 <body>
 
     <h1>Green Blobs</h1>
+    <h3>Score: <span id="score"></span></h3>
     <canvas id="gameArea" width="800" height="600"></canvas>
 
-
+    <h1>How to play</h1>
+    <h3>Arrow keys or WASD for movement<br>Shift to sprint</h3>
 
     <script src="index.js"></script>
+
 
 </body>
 </html>
