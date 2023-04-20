@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+    <style>
+        .silly {
+            background-color: mediumseagreen;
+        }
+        .silly2 {
+            background-color: mediumturquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="silly">
+    <h1>Hover over this to make the site green!</h1>
+    </div>
+
+    <div class="silly2">
+    <h1>Click here to make the site blue</h1>
+    <h3>(or click again to remove it!)</h3>
+    </div>
+
+    
+    <script>
+
+        var silly = document.querySelector(".silly")
+        var silly2 = document.querySelector(".silly2")
+        var body = document.querySelector("body")
+        var btn = "off"
+        var lastcolor = "white"
+
+        silly.addEventListener("mouseenter", function(event) {
+            body.style.backgroundColor = "green"
+        })
+
+        silly.addEventListener("mouseleave", function(event) {
+            body.style.backgroundColor = lastcolor
+        })
+
+        silly2.addEventListener("click", function(event) {
+            if(btn == "off") {
+                body.style.backgroundColor = "blue"
+                lastcolor = "blue"
+                btn = "on"
+            } else {
+                body.style.backgroundColor = "white"
+                lastcolor = "white"
+                btn = "off"
+            }
+
+        })
+    </script>
+</body>
+</html>
