@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obj Constructor</title>
+</head>
+<body>
+    
+    <script>
+
+        function Car(make, model, year) {
+            this.make = make,
+            this.model = model,
+            this.year = year,
+            this.cool = (function() {
+                var cool = prompt("Is the " + make + " " + model + " cool?")
+                if(cool == "yes") {
+                    return true
+                } else {
+                    return false
+                }
+            })()
+        }
+
+        var car1 = new Car("Mercedes Benz", "GLS", 2019)
+
+        var car2 = new Car("Hyundai", "Casper", 2021)
+
+        var car3 = new Car("Toyota", "Urban Cruiser", 2006)
+        
+    </script>
+
+</body>
+</html>
