@@ -7,6 +7,10 @@
     <title>Obj Constructor</title>
 </head>
 <body>
+
+    <div id="carNode1"></div>
+    <div id="carNode2"></div>
+    <div id="carNode3"></div>
     
     <script>
 
@@ -29,7 +33,16 @@
         var car2 = new Car("Hyundai", "Casper", 2021)
 
         var car3 = new Car("Toyota", "Urban Cruiser", 2006)
-        
+
+        var carNode1 = document.querySelector("#carNode1")
+        var carNode2 = document.querySelector("#carNode2")
+        var carNode3 = document.querySelector("#carNode3")
+
+        carNode1.innerHTML = "<h1>Car 1</h1><h3>Make: " + car1.make + "<br>Model: " + car1.model + "<br>Year: " + car1.year + "<br>Cool: " + car1.cool + "</h3>"
+
+        carNode2.innerHTML = "<h1>Car 2</h1><h3>Make: " + car2.make + "<br>Model: " + car2.model + "<br>Year: " + car2.year + "<br>Cool: " + car2.cool + "</h3>"
+
+        carNode3.innerHTML = "<h1>Car 3</h1><h3>Make: " + car3.make + "<br>Model: " + car3.model + "<br>Year: " + car3.year + "<br>Cool: " + car3.cool + "</h3>"
     </script>
 
 </body>
