@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop</title>
+</head>
+<body>
+
+
+    <h1>list:</h1>
+    <ul class="js-list">
+        
+    </ul>
+    
+    <script>
+
+        var ul = document.querySelector(".js-list")
+        var html = ""
+
+        var num = Number(prompt("Gimme a number"))
+        var startingNum = 1
+        while(startingNum <= num)  {
+            html = html + "<li>Iteration: " + startingNum + "</li>"
+            startingNum++
+        }
+
+        ul.innerHTML = html
+
+        // var num = Number(prompt("Give me a number"))
+        // var startingNum = 1
+        // while(startingNum <= num) {
+        //     console.log(startingNum)
+            
+        //     startingNum++
+        // }
+
+    </script>
+
+</body>
+</html>

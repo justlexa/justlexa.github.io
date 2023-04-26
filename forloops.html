@@ -14,15 +14,28 @@
         //     console.log(i)
         // }
 
-        var names = ["Kalob", "Nathan", "Zephyr", "Henry"]
+        // var names = ["Kalob", "Nathan", "Zephyr", "Henry"]
 
-        function toEmailAddress(name) {
-            return name.toLowerCase() + "@gmail.com"
+        var words = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio. Nunc lobortis mattis aliquam faucibus purus in massa. Congue eu consequat ac felis donec et. Consectetur adipiscing elit ut aliquam purus sit amet luctus. Nisi est sit amet facilisis magna etiam tempor orci. A lacus vestibulum sed arcu non odio euismod lacinia at. Risus sed vulputate odio ut enim. Est sit amet facilisis magna. Donec enim diam vulputate ut pharetra sit. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Eleifend mi in nulla posuere sollicitudin. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus. Egestas integer eget aliquet nibh praesent tristique magna sit amet.".split(" ")
+
+        for(var i=0; i < words.length; i++) {
+            var currentEmail = words[i].toLowerCase() + "@gmail.com"
+
+            if(i==10) {
+                break;
+            }
+
+            console.log(i, currentEmail)
         }
-        for(var i = 0; i < names.length; i++) {
-            var currentNames = names[i]
-            console.log(currentNames)
-        }
+
+        // function toEmailAddress(name) {
+        //     return name.toLowerCase() + "@gmail.com"
+        // }     
+        
+        // for(var i = 0; i < names.length; i++) {
+        //     var currentNames = names[i]
+        //     console.log(currentNames)
+        // }
 
     </script>
 

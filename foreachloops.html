@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach Loops</title>
+</head>
+<body>
+    
+    <h1>forEach loops</h1>
+
+    <ul>
+        <li class="js-text">Item 1</li>
+        <li class="js-text">Item 2</li>
+        <li class="js-text">Item 3</li>
+        <li class="js-text">Item 4</li>
+        <li class="js-text">Item 5</li>
+        <li class="js-text">Item 6</li>
+        <li class="js-text">Item 7</li>
+        <li class="js-text">Item 8</li>
+        <li class="js-text">Item 9</li>
+        <li class="js-text">Item 10</li>
+        <li class="js-text">Item 11</li>
+        <li class="js-text">Item 12</li>
+        <li class="js-text">Item 13</li>
+        <li class="js-text">Item 14</li>
+        <li class="js-text">Item 15</li>
+        <li class="js-text">Item 16</li>
+        <li class="js-text">Item 17</li>
+    </ul>
+    <script>
+
+        var lis = document.querySelectorAll(".js-text")
+
+        lis.forEach(function(node, index) {
+            if(index >= 10) {
+                node.remove()
+                return false
+            }
+            // node.innerText = (index * 12) + " is the number"
+        })
+
+        // console logs all the names individually
+        // var names = ["Kalob", "Nathan", "Zephyr", "Henry"]
+
+        // names.forEach(function(name, index) {
+        //     console.log(index, name)
+        // })
+
+    </script>
+
+</body>
+</html>
