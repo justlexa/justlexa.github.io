@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess A Number</title>
+</head>
+<body>
+    
+    <h1>A Guessing Game</h1>
+
+    <script>
+
+        var limit = prompt("Give me a number to set your guessing limit!")
+        var num = 0
+        var guessed = false
+        var correctNum = Math.round(Math.random() * limit);
+        
+        if(correctNum == 0) {
+            correctNum = 1;
+        }
+        
+
+        while(guessed == false) {
+            num = prompt("Give me a number between 1 and " + limit + "!")
+            if(num == correctNum) {
+                guessed = true
+                alert("Good job! The number was " + correctNum + "!")
+                break;
+            } else {
+                alert("Wrong! Try again.")
+                num = 0
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
