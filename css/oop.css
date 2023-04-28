@@ -1,0 +1,21 @@
+body {
+    margin: 20px 0 0 0;
+    background-color: mistyrose;
+    color: darkslategrey;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+    margin: 0 0 0 5%;
+}
+
+.infobox {
+    background-color: rgb(255, 183, 183);
+    width: 25%;
+    min-height: 80px;
+    min-width: 160px;
+    margin: 0 0 0 5%;
+    border-radius: 15px;
+    padding: 3px;
+    font-size: 25px;
+}
