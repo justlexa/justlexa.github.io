@@ -9,6 +9,7 @@
 <body>
     
     <h1>A Guessing Game</h1>
+    <div class="textNode"></div>
 
     <script>
 
@@ -21,6 +22,7 @@
             correctNum = 1;
         }
         
+        var textNode = document.querySelector(".textNode")
 
         while(guessed == false) {
             num = prompt("Give me a number between 1 and " + limit + "!")

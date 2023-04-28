@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+</head>
+<body>
+
+    <h1>You</h1>
+    <ul>
+        <li class="li1"></li>
+        <li class="li2"></li>
+        <li class="li3"></li>
+    </ul>
+    
+    <script>
+
+        const li1 = document.querySelector(".li1")
+        const li2 = document.querySelector(".li2")
+        const li3 = document.querySelector(".li3")
+
+        class Person {
+            constructor(name, age, food) {
+                this.name = name
+                this.age = Number(age)
+                this.food = food
+            }
+
+            // makeSound() {
+            //     console.log(this.name + " says mmmm to " + this.food)
+            // }
+        }
+
+        // const kalob = new Person("Kalob", 30, "Pizza")
+        // const nathan = new Person("Nathan", 28, "Salad")
+        // kalob.makeSound()
+        // nathan.makeSound()
+
+        const user = new Person(prompt("What is your name?"), prompt("What is your age?"), prompt("What is your favorite food?"),)
+        // user.makeSound()
+
+        li1.innerText = "Your name is: " + user.name
+        li2.innerText = "Your age is: " + user.age
+        li3.innerText = "Your favorite food is: " + user.food
+
+    </script>
+
+</body>
+</html>
