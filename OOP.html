@@ -32,9 +32,9 @@
                 this.food = food
             }
 
-            // makeSound() {
-            //     console.log(this.name + " says mmmm to " + this.food)
-            // }
+            makeSound() {
+                console.log(this.name + " says mmmm to " + this.food)
+            }
         }
 
         // const kalob = new Person("Kalob", 30, "Pizza")
@@ -43,7 +43,7 @@
         // nathan.makeSound()
 
         const user = new Person(prompt("What is your name?"), prompt("What is your age?"), prompt("What is your favorite food?"),)
-        // user.makeSound()
+        user.makeSound()
 
         li1.innerText = "Your name is: " + user.name
         li2.innerText = "Your age is: " + user.age
