@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link href="css/modal.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Modaling</h1>
+
+    <button class="openBtn">Open Modal</button>
+
+    <div class="modal"></div>
+
+    <script>
+
+        const openBtn = document.querySelector(".openBtn")
+        const modal = document.querySelector(".modal")
+
+        class Modal {
+            constructor(content) {
+                this.content = content
+                console.log(this.content)
+            }
+
+
+            open() {
+                var sus = this.content
+                openBtn.addEventListener("click", function(event) {
+                modal.innerHTML = "<h1>" + sus + "</h1>" + " <button  class='closeBtn'>Close Modal</button>"
+                var closeBtn = document.querySelector(".closeBtn")
+            
+                closeBtn.addEventListener("click", function(event) {
+                    modal.innerHTML = " "
+                })
+            })
+            }
+        }
+
+        const yeah = new Modal("amgou")
+        yeah.open()
+
+    </script>
+
+</body>
+</html>

@@ -4,18 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
-    <link href="css/modal.css" rel="stylesheet">
+    <title>gay</title>
+    <style>
+        .modal {
+            border-radius: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            border: 2px solid #280010;
+            background: rgb(254,242,247);
+            background: linear-gradient(200deg, rgba(254,242,247,1) 0%, rgba(255,222,236,1) 100%);
+            box-shadow: 5px 5px #280010;
+            width: 50%;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            display:none;
+        }
+
+        button {
+            border: 2px solid #555;
+            border-radius: 5px;
+            box-shadow: 3px 3px #000;
+        }
+    </style>
 </head>
 <body>
     
-    <h1>Modaling</h1>
 
-    <button class="openBtn">Open Modal</button>
+    <h1>OOP Modal</h1>
+
+    <div class="modal js-modal">
+        <h1 class="js-modal-title">This is a modal</h1>
+        <p class="js-modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A pellentesque sit amet porttitor eget dolor. Morbi tristique senectus et netus. Sit amet facilisis magna etiam. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. At consectetur lorem donec massa sapien faucibus et. Odio ut enim blandit volutpat maecenas volutpat. Etiam dignissim diam quis enim lobortis scelerisque. Felis eget nunc lobortis mattis aliquam faucibus purus. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Faucibus pulvinar elementum integer enim. Malesuada proin libero nunc consequat interdum varius sit amet. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Nunc mattis enim ut tellus elementum sagittis vitae. Vel risus commodo viverra maecenas accumsan lacus vel. Tempus urna et pharetra pharetra massa.</p>
+        <p>
+            <button class="js-close-modal">Close Modal</button>
+        </p>
+    </div>
+
+    <button class="js-open-modal">OPEN MODAL</button>
+
+
 
     <script>
 
-        var openBtn = document.querySelector(".openBtn")
+        class Modal {
+            constructor() {
+                this.modal = document.querySelector(".js-modal")
+            }
+            
+            open() {
+                this.modal.style.display = "initial"
+            }
+
+            close() {
+                this.modal.style.display = "none"
+            }
+
+            changeContent(title, text) {
+                if(title !== undefined){
+                    this.modal.querySelector(".js-modal-title").innerText = title
+                }
+                if(text !== undefined) {
+                    this.modal.querySelector(".js-modal-text").innerText = text
+                }
+            }
+        }
+
+        const openBtn = document.querySelector(".js-open-modal")
+        const closeBtn = document.querySelector(".js-close-modal")
+        const modal = new Modal()
+        modal.changeContent("sus", "amogus")
+
+        openBtn.addEventListener('click', function(event) {
+            modal.open()
+        })
+
+        closeBtn.addEventListener('click', function(event) {
+            modal.close()
+        })
 
     </script>
 
