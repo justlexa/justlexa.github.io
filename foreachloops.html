@@ -10,6 +10,7 @@
     
     <h1>forEach loops</h1>
 
+    <!-- List with placeholder items used for the script -->
     <ul>
         <li class="js-text">Item 1</li>
         <li class="js-text">Item 2</li>
@@ -29,19 +30,26 @@
         <li class="js-text">Item 16</li>
         <li class="js-text">Item 17</li>
     </ul>
+
     <script>
 
+        // Variable used to grab all of the lis in the html
         var lis = document.querySelectorAll(".js-text")
 
+        // The forEach loop that goes through all the lis
         lis.forEach(function(node, index) {
+            // if statement that removes lis that have an index above or equal to 10
             if(index >= 10) {
                 node.remove()
                 return false
             }
-            // node.innerText = (index * 12) + " is the number"
+            // Cnanges the innertext using the index meaning every li has different text
+            node.innerText = (index * 12) + " is the number"
         })
 
-        // console logs all the names individually
+        // Old code
+
+        // Console logs all the names individually
         // var names = ["Kalob", "Nathan", "Zephyr", "Henry"]
 
         // names.forEach(function(name, index) {
