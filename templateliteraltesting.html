@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body {
+            text-shadow: 2px 2px white;
+        }
+        .spider {
+            background-image: url(img/spider.jpg);
+        }
+        .darkness {
+            background-image: url(img/darkness.jpg);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Give us your info!</h1>
+    <label>Name</label>
+    <input type="text" class="js-input-name">
+    <h3 class="js-name-node"></h3>
+
+    <br>
+    <label>Age</label>
+    <input type="number" class="js-input-age">
+    <h3 class="js-age-node"></h3>
+
+    <br>
+    <label>Greatest fear</label>
+    <input type="text" class="js-input-fear">
+    <h3 class="js-fear-node"></h3>
+
+    <script>
+
+        const body = document.querySelector("body")
+
+        const name = document.querySelector(".js-input-name")
+        const age = document.querySelector(".js-input-age")
+        const fear = document.querySelector(".js-input-fear")
+
+        const nameNode = document.querySelector(".js-name-node")
+        const ageNode = document.querySelector(".js-age-node")
+        const fearNode = document.querySelector(".js-fear-node")
+
+        // Event listener to update the name h3 with the name input
+        name.addEventListener("keyup", function(){
+            nameNode.innerText = `Your name is ${name.value}`
+            // clear h3 if input is empty
+            if(name.value == "") {
+                nameNode.innerText = ""
+            }
+        })
+
+        // Event listener to update the age h3 with the age input
+        age.addEventListener("keyup", function(){
+            ageNode.innerText = `Your age is ${age.value}`
+            // clear h3 if input is empty
+            if(age.value == "") {
+                ageNode.innerText = ""
+            }
+        })
+
+        // Event listener to update the fear h3 with the fear input
+        fear.addEventListener("keyup", function(){
+            fearNode.innerText = `Your greatest fear is ${fear.value}`
+            // clear h3 if input is empty
+            if(fear.value == "") {
+                fearNode.innerText = ""
+            }
+            // spider jumpscare if your greatest fear is spiders
+            if(fear.value == "spider" || fear.value == "spiders") {
+                body.classList.add("spider")
+            } else {
+               body.classList.remove("spider")
+            }
+            // darkness jumpscare if your greatest fear is darkness
+            if(fear.value == "darkness") {
+                body.classList.add("darkness")
+            } else {
+                body.classList.remove("darkness")
+            }
+            
+        })
+
+
+
+    </script>
+
+</body>
+</html>
