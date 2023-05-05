@@ -29,12 +29,17 @@
         var strings = {}
 
         submit.addEventListener("click", function() {
+            // if check to make sure there's an input
             if(length.value != "" || amount.value != "") {
+                // Loading message
                 textNode.innerHTML = "Loading..."
+                // Fetching the strings using an API
                 fetch(`https://ciprand.p3p.repl.co/api?len=${length.value}&count=${amount.value}`)
+                // Grabs the json from the response
                 .then(function(response) {
                     return response.json()
                 })
+                // Gets the array of strings and puts them all into the textNode
                 .then(function(res) {
                     strings = res
                     textNode.innerHTML = ""
