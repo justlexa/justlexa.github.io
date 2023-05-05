@@ -15,6 +15,12 @@
         .darkness {
             background-image: url(img/darkness.jpg);
         }
+        .howhungry {
+            background-image: url(img/FbYXe1xXgAEpAAG.png);
+        }
+        .bigmac {
+            background-image: url(img/bigmac.jpg);
+        }
     </style>
 </head>
 <body>
@@ -83,7 +89,18 @@
             } else {
                 body.classList.remove("darkness")
             }
-            
+            // how hungry
+            if(fear.value == "horse" || fear.value == "horses" || fear.value == "hunger") {
+                body.classList.add("howhungry")
+            } else {
+                body.classList.remove("howhungry")
+            }
+            // big mac jumpscare
+            if(fear.value == "food" || fear.value == "fast food" || fear.value == "obesity") {
+                body.classList.add("bigmac")
+            } else {
+                body.classList.remove("bigmac")
+            }
         })
 
 
