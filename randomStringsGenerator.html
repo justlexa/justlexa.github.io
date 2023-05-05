@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random :)</title>
+    <link href="css/randomstrings.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <label>length</label>
+    <input type="number" class="js-length">
+    <label>amount</label>
+    <input type="number" class="js-amount">
+    <button type="submit" class="js-submit">Fetch random strings</button>
+
+    <p class="textNode"></p>
+
+    <script>
+
+        var length = document.querySelector(".js-length")
+        var amount = document.querySelector(".js-amount")
+        var textNode = document.querySelector(".textNode")
+        var submit = document.querySelector(".js-submit")
+        var strings = {}
+
+        submit.addEventListener("click", function() {
+            if(length.value != "" || amount.value != "") {
+                textNode.innerHTML = "Loading..."
+                fetch(`https://ciprand.p3p.repl.co/api?len=${length.value}&count=${amount.value}`)
+                .then(function(response) {
+                    return response.json()
+                })
+                .then(function(res) {
+                    strings = res
+                    textNode.innerHTML = ""
+                    for(var i=0; i < strings.Strings.length; i++) {
+                        textNode.innerHTML = textNode.innerHTML + strings.Strings[i] + "<br>"
+                    }
+
+                })
+            } else {
+                alert("Please input a length and an amount!")
+            }
+        })
+
+    </script>
+</body>
+</html>
