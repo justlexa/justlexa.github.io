@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout</title>
+</head>
+<body>
+
+    <h1>hit the gwiddy</h1>
+    
+    <script>
+
+
+        function rainbow () {
+            setTimeout(function() {
+                const body = document.querySelector("body")
+                body.style.backgroundColor = "blue"
+                body.style.color = "green"
+            }, 100)
+            setTimeout(function() {
+                const body = document.querySelector("body")
+                body.style.backgroundColor = "green"
+                body.style.color = "yellow"
+            }, 200)
+            setTimeout(function() {
+                const body = document.querySelector("body")
+                body.style.backgroundColor = "yellow"
+                body.style.color = "orange"
+            }, 300)
+            setTimeout(function() {
+                const body = document.querySelector("body")
+                body.style.backgroundColor = "orange"
+                body.style.color = "red"
+            }, 400)
+            setTimeout(function() {
+                const body = document.querySelector("body")
+                body.style.backgroundColor = "red"
+                body.style.color = "purple"
+            }, 500)
+            setTimeout(function() {
+                const body = document.querySelector("body")
+                body.style.backgroundColor = "purple"
+                body.style.color = "blue"
+            }, 600)
+            setTimeout(function() {
+                rainbow()
+            }, 600)
+        }
+
+        rainbow()
+    </script>
+
+</body>
+</html>
