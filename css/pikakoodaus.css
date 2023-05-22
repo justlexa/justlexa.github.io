@@ -6,6 +6,12 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#main {
+    margin: 0 auto;
+    width: 40%;
+    min-width: 300px;
+}
+
 h1 {
     background-color: midnightblue;
     color: cornflowerblue;
@@ -15,7 +21,10 @@ h1 {
     text-align: center;
 }
 
-.simpletext {
-    font-family: initial;
+h3 {
+    font-size: 30px;
+}
 
+p {
+    font-size: 20px;
 }
