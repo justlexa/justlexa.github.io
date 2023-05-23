@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skyler White Generator</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      margin-top: 50px;
+    }
+    
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    p {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Skyler White Generator</h1>
+  <button onclick="generateText()">Generate</button>
+  <p id="output"></p>
+
+  <script>
+    function generateText() {
+      var names = [
+        "My name is Skyler White yo",
+        "Yo, I'm Skyler White",
+        "Skyler White, at your service",
+        "Call me Skyler White, yo",
+        "Skyler White reporting in, yo",
+        "It's Skyler White, yo"
+      ];
+
+      var randomIndex = Math.floor(Math.random() * names.length);
+      var generatedText = names[randomIndex];
+
+      document.getElementById("output").textContent = generatedText;
+    }
+  </script>
+</body>
+</html>
