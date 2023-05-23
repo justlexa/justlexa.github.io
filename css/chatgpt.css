@@ -1,66 +1,76 @@
+/* Set the base styles for the website */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: Arial, sans-serif; /* Set the font family for the entire document */
+  background-color: #f2f2f2; /* Set the background color for the body */
   margin: 0;
   padding: 0;
 }
 
+/* Style the header section */
+
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* Set the background color for the header */
+  color: #fff; /* Set the text color for the header */
   padding: 20px;
   text-align: center;
 }
 
 h1 {
-  margin: 0;
+  margin: 0; /* Remove margin around the heading */
 }
+
+/* Style the main content section */
 
 main {
-  max-width: 960px;
-  margin: 20px auto;
+  max-width: 960px; /* Set the maximum width for the main content */
+  margin: 20px auto; /* Center the main content horizontally */
   padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Set the background color for the main content */
+  border-radius: 5px; /* Add rounded corners to the main content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow to the main content */
 }
 
+/* Style the individual language sections */
+
 .language {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add spacing between the language sections */
+  padding: 20px; /* Add padding inside the language sections */
+  border-radius: 5px; /* Add rounded corners to the language sections */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow to the language sections */
 }
 
 .language h2 {
-  margin-top: 0;
+  margin-top: 0; /* Remove margin above the language heading */
 }
 
 .language p {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Remove margin below the language description */
 }
 
+/* Set the styles for each programming language section */
+
 .language.python {
-  background-color: #4B8BBE;
-  color: #fff;
+  background-color: #4B8BBE; /* Set the background color for the Python section */
+  color: #fff; /* Set the text color for the Python section */
 }
 
 .language.javascript {
-  background-color: #F7DF1E;
-  color: #333;
+  background-color: #F7DF1E; /* Set the background color for the JavaScript section */
+  color: #333; /* Set the text color for the JavaScript section */
 }
 
 .language.java {
-  background-color: #007396;
-  color: #fff;
+  background-color: #007396; /* Set the background color for the Java section */
+  color: #fff; /* Set the text color for the Java section */
 }
 
 .language.csharp {
-  background-color: #68217A;
-  color: #fff;
+  background-color: #68217A; /* Set the background color for the C# section */
+  color: #fff; /* Set the text color for the C# section */
 }
 
 .language.ruby {
-  background-color: #CC342D;
-  color: #fff;
+  background-color: #CC342D; /* Set the background color for the Ruby section */
+  color: #fff; /* Set the text color for the Ruby section */
 }
