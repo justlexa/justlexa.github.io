@@ -10,11 +10,13 @@
 <body>
 
     <div>
+        <button class="btn on">Fade Toggle</button>
         <h1>Final Lesson</h1>
     </div>
 
     <script>
-
+        var btn = document.querySelector(".btn")
+        var fade = true
         var header = document.querySelector("h1")
         header.innerText = prompt("Give me some text!")
         if(header.innerText == "") {
@@ -49,9 +51,24 @@
 
         splitletters.forEach(function(node) {
             node.addEventListener("mouseout", function() {
+                if(fade == true){
                 node.style.color = "black"
                 node.classList.add("slowfade")
+                }
             })
+        })
+
+        btn.addEventListener("click", function() {
+            if(fade == true){
+                fade = false
+                btn.classList.remove("on")
+                btn.classList.add("off")
+            } else {
+                fade = true
+                btn.classList.remove("off")
+                btn.classList.add("on")
+            }
+            
         })
     </script>
 

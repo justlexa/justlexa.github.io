@@ -5,6 +5,22 @@ h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.btn {
+    text-align: center;
+    font-size: 40px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+.on {
+    background-color:lawngreen;
+}
+
+.off {
+    background-color: red;
+}
+
 .slowfade {
     transition: color 2s;
 }
