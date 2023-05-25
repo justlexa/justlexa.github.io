@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    margin: 60px 0 0 0;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.slowfade {
+    transition: color 2s;
+}

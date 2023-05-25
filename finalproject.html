@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="css/final.css" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+        <h1>Final Project</h1>
+    </div>
+
+    <script>
+
+        var header = document.querySelector("h1")
+        var letters = header.innerText.split("");
+
+        var replace = ""
+
+        replace = letters.forEach(function(index, num) {
+            num = num + 1
+            replace = `${replace}<span class="index${num}">${index}</span>`
+            header.innerHTML = replace
+        })
+
+        var splitletters = document.querySelectorAll("span")
+
+        function get_rand_color() {
+            var color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
+            while(color.length < 6) {
+                color = "0" + color;
+            }
+            return "#" + color;
+        }
+
+        splitletters.forEach(function(node) {
+            node.addEventListener("mouseover", function() {
+                node.style.color = get_rand_color()
+                node.classList.remove("slowfade")
+            })
+        })
+
+        splitletters.forEach(function(node) {
+            node.addEventListener("mouseout", function() {
+                node.style.color = "black"
+                node.classList.add("slowfade")
+            })
+        })
+    </script>
+
+</body>
+</html>
