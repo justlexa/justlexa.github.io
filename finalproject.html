@@ -17,6 +17,9 @@
 
         var header = document.querySelector("h1")
         header.innerText = prompt("Give me some text!")
+        if(header.innerText == "") {
+            header.innerText = "Final Project"
+        }
         var letters = header.innerText.split("");
 
         var replace = ""
