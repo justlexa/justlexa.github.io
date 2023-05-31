@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="js-title">Exam page</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    
+    <button class="js-btn">Click to change the title</button>
+
+    <h1>Heading 1</h1> <!-- 3 Headings with different levels -->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <p>
+        bread text bread text bread text bread text bread text bread text bread text bread text bread text Imagine i put lorem ipsum text here (i cant cause im not allowed to use other websites besides my own and i didnt make loremipsum.io) bread text bread text bread text bread text bread text bread text bread text bread text bread text bread text
+    </p>
+
+    <!-- Link to google -->
+    <a href="https://google.com">Link to Google</a>
+    <br>
+    <!-- Image of among drip -->
+    <img src="drip.jpg" alt="among us drip">
+
+    <script>
+
+        const btn = document.querySelector(".js-btn")
+        const title = document.querySelector(".js-title")
+
+        btn.addEventListener("click", function() {
+            var input = prompt("Give me a title for the page!", "Page Title")
+            title.innerText = input
+        })
+
+        
+    </script>
+</body>
+</html>
