@@ -1,0 +1,8 @@
+#layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav {
+    flex-basis: 100%;
+    border-bottom: 1px solid #aaa;
+}
