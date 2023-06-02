@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
 #layout {
     display: flex;
     flex-wrap: wrap;
@@ -5,4 +12,31 @@
 #nav {
     flex-basis: 100%;
     border-bottom: 1px solid #aaa;
+    padding: 20px;
+}
+#sidebar {
+    flex-basis: 20%;
+    border-right: 1px solid #aaa;
+    padding: 20px;
+    border-bottom: 1px solid #aaa;
+}
+#content {
+    flex-basis: 80%;
+    padding: 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+@media (max-width: 640px) {
+    #sidebar {
+        flex-basis: 100%;
+    }
+    #content {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+    #sidebar {
+        display: none;
+    }
 }
