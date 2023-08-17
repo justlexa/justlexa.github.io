@@ -1,0 +1,112 @@
+html {
+    font-size: 10px;
+    color: #22191c;
+}
+
+#game-area {
+    font-size: 1.6rem;
+    padding-top: 3rem;
+}
+
+.imageArea,
+.stats {
+    min-height: 30vh;
+}
+
+.imageArea {
+    background: linear-gradient(70deg, #617db1, #2462ab);
+    border-radius: 0 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.4rem;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.items {
+    font-size: 2rem;
+}
+
+button {
+    width: 8rem;
+    border-radius: 3rem;
+    padding: 1rem;
+    background: transparent;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+button:nth-child(2) {
+    border: 3px solid rgb(255, 85, 85);
+}
+
+button:nth-child(1) {
+    border: 3px solid rgb(112, 255, 112);
+}
+
+.stats {
+    background: whitesmoke;
+    border: 2px solid #617db1;
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.space-y {
+    margin: 3rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #game-area {
+        display: flex;
+    }
+
+    .imageArea,
+    .stats {
+        min-height: 50vh;
+    }
+
+    .imageArea {
+         border-radius: 3rem;
+         transform: translate(-3rem);
+         flex: 2;
+    }
+
+    .stats {
+        flex: 1;
+        border-radius: 3rem 0 0 3rem;
+        margin-left: 3rem;
+        padding-right: 3rem;
+    }
+}
