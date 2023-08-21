@@ -3,7 +3,7 @@ const back = document.querySelector("#back")
 const daytitle = document.querySelector("#day")
 const entry = document.querySelector("#entry")
 
-let pages = ["EXAMPLE DAY NOT REAL wow i did so much in this very real day woadwahwahdh", "DIFFERENT EXAMPLE DAY NOT REAL wow i did so much in this very real day woadwahwahdh", "balls"]
+let pages = ["I got to open up some phones, disconnect the batteries and then throw them in the pile. A couple tablets too. I didnt do much else but near the end of the day I also uninstalled an antivirus off a customers computer with some help."]
 
 let day = 0
 
