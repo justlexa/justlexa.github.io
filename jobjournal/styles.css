@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #4d2400;
+    color: #00004d;
     background: rgb(0, 166, 255);
     background: linear-gradient(90deg, rgb(0, 166, 255) 0%, rgb(14, 199, 255) 50%, rgb(32, 166, 255) 100%);
     margin: 0;
