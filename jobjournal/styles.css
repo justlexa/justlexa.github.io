@@ -2,20 +2,20 @@ body {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #4d2400;
-    background: rgb(255,188,0);
-    background: linear-gradient(90deg, rgba(255,188,0,1) 0%, rgba(255,216,14,1) 50%, rgb(255, 222, 32) 100%);
+    background: rgb(0, 166, 255);
+    background: linear-gradient(90deg, rgb(0, 166, 255) 0%, rgb(14, 199, 255) 50%, rgb(32, 166, 255) 100%);
     margin: 0;
     padding: 0;
 }
 
 #journal {
-    background: rgba(255,188,0,1);
+    background: rgb(0, 166, 255);
     padding: 5px;
     width: 40%;
     min-height: 150px;
     margin: 0 30%;
     border-radius: 15px;
-    border: 5px double rgb(218, 131, 0);
+    border: 5px double rgb(0, 153, 218);
 }
 
 h1 {
@@ -34,17 +34,17 @@ p {
 }
 
 button {
-    background: rgba(255,188,0,1);
+    background: rgb(0, 166, 255);
     margin: 10px 3px;
     font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #4d2400;
     padding: 5px;
     border-radius: 10px;
-    border: 2px solid rgb(218, 131, 0);
+    border: 2px solid rgb(0, 153, 218);
 }
 
 button:hover {
-    color: #ffe7d2;
-    border: 2px solid #ffe7d2;
+    color: #d2feff;
+    border: 2px solid #d2feff;
 }
