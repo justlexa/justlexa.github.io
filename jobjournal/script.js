@@ -12,24 +12,38 @@ let pages = ["I got to open up some phones, disconnect the batteries and then th
 "There was literally no work for me to do so I ended up going home early since there was no point in me just sitting around doing nothing. There was some talk about me getting to try and improve a company program, which im interested in. They have to wipe the customer data first though, so I haven't got to see it yet.",
 "Once again had barely any work, and went home early.",
 "I set up a laptop again, went home early.",
-"I set up 2 laptops with windows updates and Ninite, not much else. Might get my hands on a program for setting up customers, without any customer data of course."]
+"I set up 2 laptops with windows updates and Ninite, not much else. Might get my hands on a program for setting up customers, without any customer data of course.",
+"Set up a laptop once again and delivered a package.",
+"Same as last day except I went to buy some coffee stuff instead of delivering a package."]
 
 let day = 0
+let dayAdd = 0
+let weekFix = 0
 
 // Setting up text for day and journal entry automatically for ease of use
 function setup() {
-    let dayCount = day + 1
-    daytitle.innerText = "Day " + dayCount
+    daytitle.innerText = "21.8"
     entry.innerText = pages[day]
 }
 setup()
+
 
 // Goes to the next journal entry and updates day number
 function goNext() {
     day++;
     if(day < pages.length) {
-        let dayCount = day + 1
-        daytitle.innerText = "Day " + dayCount
+        if(day % 5 == 0){
+            weekFix = weekFix + 2
+            console.log("week+2")
+        }
+        dayAdd = day + weekFix
+        let dayMonth = 21 + dayAdd
+        if(dayMonth < 32) {
+            dayMonth = dayMonth + ".8"
+        } else {
+            dayMonth = dayMonth - 31 + ".9"
+        }
+        daytitle.innerText = dayMonth
         entry.innerText = pages[day]
     } else {
         day = pages.length-1
@@ -40,8 +54,18 @@ function goNext() {
 function goBack() {
     day--;
     if(day > -1) {
-        let dayCount = day + 1
-        daytitle.innerText = "Day " + dayCount
+        if((day - 4) % 5 == 0){
+            weekFix = weekFix - 2
+            console.log("week-2")
+        } 
+        dayAdd = day + weekFix
+        let dayMonth = 21 + dayAdd
+        if(dayMonth < 32) {
+            dayMonth = dayMonth + ".8"
+        } else {
+            dayMonth = dayMonth - 31 + ".9"
+        }
+        daytitle.innerText = dayMonth
         entry.innerText = pages[day]
     } else {
         day = 0
