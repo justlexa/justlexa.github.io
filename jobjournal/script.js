@@ -14,7 +14,10 @@ let pages = ["I got to open up some phones, disconnect the batteries and then th
 "I set up a laptop again, went home early.",
 "I set up 2 laptops with windows updates and Ninite, not much else. Might get my hands on a program for setting up customers, without any customer data of course.",
 "Set up a laptop once again and delivered a package.",
-"Same as last day except I went to buy some coffee stuff instead of delivering a package."]
+"Same as last day except I went to buy some coffee stuff instead of delivering a package.",
+"I did some laptop setting up again",
+"I did literally nothing",
+"I did literally nothing. Again."]
 
 let day = 0
 let dayAdd = 0
