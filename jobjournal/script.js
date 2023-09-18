@@ -21,7 +21,9 @@ let pages = ["I got to open up some phones, disconnect the batteries and then th
 "I busted up some hard disks and a phone. Not much else",
 "I got to build a PC, except it was missing a GPU. Building hardware is much scarier than software since there's no CTRL + Z in real life.",
 "I got to take more of a look at the possible software but im still not really sure if I'll be able to do anything with it.",
-"Missed my bus D:"]
+"Missed my bus D:",
+"I did barely anything.",
+"I didn't do anything."]
 
 let day = 0
 let dayAdd = 0
