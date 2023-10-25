@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+</head>
+<body>
+    <h1>Ilmoita tähtihavainnosta</h1>
+
+    <form>
+
+        <label for="päivämäärä">Päivämäärä</label>
+        <input type="date" id="päivämäärä" name="päivämäärä">
+        <br>
+        <label for="alkuaika">Tapahtuma alkuaika</label>
+        <input type="time" id="alkuaika" name="alkuaika">
+        <br>
+        <label for="paikka">Tapahtumapaikka</label>
+        <input type="text" id="paikka" name="paikka">
+        <br>
+        <label for="kuvaus">Tapahtuman kuvaus</label>
+        <textarea name="kuvaus" id="kuvaus">Kirjoita kuvaus tähän</textarea>
+        <br>
+        <br>
+        <label for="nimi">Havainnon tekijän nimi</label>
+        <input type="text" id="nimi" name="nimi" required>
+        <br>
+        <label for="email">Sähkopostiosoite</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="puhnumero">Puhelinnumero</label>
+        <input type="tel" id="puhnumero" name="puhnumero">
+        <br>
+        <input type="checkbox" id="tieto" name="tieto">
+        <label for="tieto">Havainnon yhteydessä saa näkyä tietoni</label>
+        <br>
+        <input type="submit" value="Lähetä tiedot">
+
+    </form>
+</body>
+</html>
