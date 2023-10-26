@@ -1,0 +1,16 @@
+body {
+    background-color: #b2b4b3;
+}
+
+.allbtn {
+    background-color: #0d6efd;
+}
+
+.allbtn:hover {
+    background-color: #4791ff;
+}
+
+.bigbtn {
+    height: 140px;
+    font-size: 20px;
+}
